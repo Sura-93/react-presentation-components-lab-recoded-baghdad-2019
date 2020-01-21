@@ -10,23 +10,23 @@ class SimpleComponent extends Component {
        case "happy":this.setState({
          mood:"sad"
        })
-         
+
          break;
          case "sad":this.setState({
            mood:"happy"
          })
-           
+
            break;
-       
-         
+
+
      }
-        
+
       }
-    render() { 
-        return ( 
+    render() {
+        return (
   <div onClick={this.handleClick }> {this.state.mode} </div>
          );
     }
 }
- 
+
 export default SimpleComponent;
